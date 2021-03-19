@@ -1,0 +1,126 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  background: #efd592
+  width: 100vw
+  color: #242d38
+  overflow-x: hidden
+
+main
+  margin-top: 120px
+  display: flex
+  justify-content: center
+  .main-container
+    width: 1500px
+    height: 600px
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 50px
+    .square
+      background: #242d38
+      width: 750px
+      height: 750px
+
+section
+  max-width: 600px
+  display: flex
+  flex-direction: column
+  gap: 20px
+  h1
+    font-size: 3rem
+    font-weight: 700
+    margin-bottom: 40px
+  p
+    font-weight: 500
+    font-size: 17px
+    letter-spacing: .8px
+    line-height: 2
+  .btn-light
+    background: #00000000
+    border: none
+    text-align: left
+    padding: 5px
+    margin-left: -5px
+    width: 165px
+    font-size: 24px
+    letter-spacing: 1.5px
+    font-weight: 700
+    text-transform: uppercase
+
+.hamburger
+  width: 100px
+  height: 100px
+  background: #242d38
+  border-radius: 50%
+  padding: 10px
+  position: absolute
+  top: 20px
+  right: 20px
+  z-index: 100
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  gap: 8px
+  div
+    display: flex
+    justify-content: center
+    align-items: center
+  div:nth-of-type(1)
+    background: #efd592
+    height: 7px
+    width: 50px
+  div:nth-of-type(2)
+    background: #efd592
+    height: 7px
+    width: 50px
+  div:nth-of-type(3)
+    background: #efd592
+    height: 7px
+    width: 50px
+
+@media (max-width: 1500px)
+  main
+    margin-top: 0
+    .main-container
+      width: 100%
+      min-height: 1150px
+      flex-direction: column
+      gap: 0
+      .square
+        margin-top: -60px
+        width: 100%
+        height: 500px
+
+  section
+    padding: 40px
+    gap: 20px
+    h1
+      margin-bottom: 15px
+
+  .hamburger
+    width: 80px
+    height: 80px
+    background: #242d38
+    border: 1px solid #efd592
+    border-radius: 50%
+    padding: 0px
+    position: absolute
+    top: 20px
+    right: 20px
+    gap: 5px
+    div:nth-of-type(1)
+      background: #efd592
+      height: 5px
+      width: 40px
+    div:nth-of-type(2)
+      background: #efd592
+      height: 5px
+      width: 40px
+    div:nth-of-type(3)
+      background: #efd592
+      height: 5px
+      width: 40px
